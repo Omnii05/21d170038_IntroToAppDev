@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 void main() {
-runApp(CounterApp());
+  runApp(CounterApp());
 }
 
 class CounterApp extends StatelessWidget {
@@ -58,18 +58,18 @@ class _CounterPageState extends State<CounterPage> {
         ),
       ),
       floatingActionButton: Row(mainAxisAlignment: MainAxisAlignment.end,children:
-        [FloatingActionButton(
+      [FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
-       FloatingActionButton(
-        onPressed: _decrementCounter,
-        tooltip: 'Decrement',
-        child: Icon(Icons.remove),
-       ),
+        FloatingActionButton(
+          onPressed: _decrementCounter,
+          tooltip: 'Decrement',
+          child: Icon(Icons.remove),
+        ),
       ],
-     ),
+      ),
     );
   }
 }
